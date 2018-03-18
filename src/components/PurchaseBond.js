@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import instance from '../token/saveToken';
-import ethereum_address from 'ethereum-address';
+// import ethereum_address from 'ethereum-address';
 import web3 from '../token/web3';
 
 import { Row, Card, Col, Input, Select, Button, Form, Icon } from "antd";
@@ -49,16 +49,16 @@ class PurchaseBond extends React.Component {
     handleCheckAddress = (rule, value, callback) => {
         this.setState({balanceAddress: value})
         if (value) {
-            if (value && !ethereum_address.isAddress(value)) {
-                // console.log('invalid')
-                this.setState({validBalanceAddress: false})
-                callback('Invalid Address!')
-            }
-            else {
-                // console.log('valid', value)
-                callback()
-                this.setState({validBalanceAddress: true})
-            }
+            // if (value && !ethereum_address.isAddress(value)) {
+            //     // console.log('invalid')
+            //     this.setState({validBalanceAddress: false})
+            //     callback('Invalid Address!')
+            // }
+            // else {
+            //     // console.log('valid', value)
+            //     callback()
+            //     this.setState({validBalanceAddress: true})
+            // }
         }
         else {
             callback()

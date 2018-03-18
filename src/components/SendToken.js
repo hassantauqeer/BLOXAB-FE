@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import instance from '../token/saveToken';
-import ethereum_address from 'ethereum-address';
+// import ethereum_address from 'ethereum-address';
 import web3 from '../token/web3';
 
 import { Row, Card, Col, Input, Button, Form, Icon } from "antd";
@@ -65,13 +65,13 @@ class SendToken extends React.Component {
     handleSendAddress = (rule, value, callback) => {
         this.setState({sendAddress: value})
         if (value) {
-            if (value && !ethereum_address.isAddress(value)) {
-                callback('Invalid Address!')
-                console.log("invalid-add", value)
-            }
-            else {
-                callback()
-            }
+            // if (value && !ethereum_address.isAddress(value)) {
+            //     callback('Invalid Address!')
+            //     console.log("invalid-add", value)
+            // }
+            // else {
+            //     callback()
+            // }
         }
         else {
             callback()

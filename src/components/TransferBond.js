@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import instance from '../token/saveToken';
-import ethereum_address from 'ethereum-address';
+// import ethereum_address from 'ethereum-address';
 
 import { Row, Card, Col, Input, Button, Select, Form, Icon } from "antd";
 const Option = Select.Option;

@@ -5,7 +5,7 @@ import "antd/dist/antd.min.css";
 import "antd/lib/icon/style/css";
 import instance from './token/saveToken';
 import * as BLOXAB from './token/build/BLOXAB.json';
-import ethereum_address from 'ethereum-address';
+// import ethereum_address from 'ethereum-address';
 
 // import SendToken from "./components/SendToken";
 import PurchaseBond from "./components/PurchaseBond";
