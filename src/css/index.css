@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.App {
+  width: 75%;
+  margin: 0px auto;
+}
+.loader-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes slide {
+  0% {
+    transform: translate(0, 0);
+  }
+  2% {
+    transform: translate(33px, 0);
+  }
+  12.5% {
+    transform: translate(33px, 0);
+  }
+  15.5% {
+    transform: translate(66px, 0);
+  }
+  25% {
+    transform: translate(66px, 0);
+  }
+  27% {
+    transform: translate(66px, 33px);
+  }
+  37.5% {
+    transform: translate(66px, 33px);
+  }
+  39.5% {
+    transform: translate(33px, 33px);
+  }
+  50% {
+    transform: translate(33px, 33px);
+  }
+  52% {
+    transform: translate(33px, 66px);
+  }
+  62.5% {
+    transform: translate(33px, 66px);
+  }
+  64.5% {
+    transform: translate(0, 66px);
+  }
+  75% {
+    transform: translate(0, 66px);
+  }
+  77% {
+    transform: translate(0, 33px);
+  }
+  87.5% {
+    transform: translate(0, 33px);
+  }
+  89.5% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes gradient1 {
+  from {
+    stop-color: #000;
+  }
+  50% {
+    stop-color: #000;
+  }
+  to {
+    stop-color: #000;
+  }
+}
+@keyframes gradient2 {
+  from {
+    stop-color: #fff;
+  }
+  50% {
+    stop-color: #fff;
+  }
+  to {
+    stop-color: #fff;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+svg#loading {
+  display: block;
+  margin: auto;
+  width: 20rem;
+  height: auto;
+}
+svg#loading #gradient > stop[offset="0%"] {
+  animation: gradient1 15s ease 0s infinite;
+}
+svg#loading #gradient > stop[offset="100%"] {
+  animation: gradient2 15s ease 0s infinite;
+}
+svg#loading .rect {
+  animation: slide 15s ease infinite;
+}
+svg#loading #rect1 {
+  animation-delay: 0s;
+}
+svg#loading #rect2 {
+  animation-delay: -2.14285714s;
+}
+svg#loading #rect3 {
+  animation-delay: -4.28571429s;
+}
+svg#loading #rect4 {
+  animation-delay: -6.42857143s;
+}
+svg#loading #rect5 {
+  animation-delay: -8.57142857s;
+}
+svg#loading #rect6 {
+  animation-delay: -10.71428571s;
+}
+svg#loading #rect7 {
+  animation-delay: -12.85714286s;
+}
